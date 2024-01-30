@@ -1,22 +1,19 @@
-// MathUtils.java
-public class MathUtils {
-    public int add(int a, int b) {
-        return a + b;
-    }
+package javatestcase;
 
-    public int subtract(int a, int b) {
-        return a - b;
-    }
+import static org.junit.Assert.*;
 
-    public int multiply(int a, int b) {
-        return a * b;
-    }
+import org.junit.Test;
 
-    public double divide(int a, int b) {
-        if (b != 0) {
-            return (double) a / b;
-        } else {
-            return -1.0;
-        }
-    }
+public class Mathutilstest {
+
+	@Test
+	public void test() {
+		MathsUtils result = new MathsUtils();
+		
+		assertEquals(25, result.add(20, 5));
+		assertEquals(30, result.multiply(10, 3));
+		assertEquals(10, result.subtract(20,10));
+		
+	}
+
 }
